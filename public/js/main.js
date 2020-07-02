@@ -61,40 +61,85 @@
 /******/ 		__webpack_require__.r(ns);
 /******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
 /******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
 /******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./resource/js/index.js");
-/******/ })
+		return ns;
+		/******/
+	};
+	/******/
+	/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+	/******/
+	__webpack_require__.n = function (module) {
+		/******/
+		var getter = module && module.__esModule ?
+			/******/            function getDefault() {
+				return module['default'];
+			} :
+			/******/            function getModuleExports() {
+				return module;
+			};
+		/******/
+		__webpack_require__.d(getter, 'a', getter);
+		/******/
+		return getter;
+		/******/
+	};
+	/******/
+	/******/ 	// Object.prototype.hasOwnProperty.call
+	/******/
+	__webpack_require__.o = function (object, property) {
+		return Object.prototype.hasOwnProperty.call(object, property);
+	};
+	/******/
+	/******/ 	// __webpack_public_path__
+	/******/
+	__webpack_require__.p = "";
+	/******/
+	/******/
+	/******/ 	// Load entry module and return exports
+	/******/
+	return __webpack_require__(__webpack_require__.s = 0);
+	/******/
+})
 /************************************************************************/
 /******/ ({
 
-/***/ "./resource/js/index.js":
-/*!******************************!*\
-  !*** ./resource/js/index.js ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+		/***/ "./resource/js/count.js":
+		/*!******************************!*\
+		  !*** ./resource/js/count.js ***!
+		  \******************************/
+		/*! no static exports found */
+		/***/ (function (module, exports, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nError: Cannot find module '@babel/core'\\nRequire stack:\\n- D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\babel-loader\\\\lib\\\\index.js\\n- D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\loader-runner\\\\lib\\\\loadLoader.js\\n- D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js\\n- D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js\\n- D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js\\n- D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\webpack\\\\lib\\\\Compiler.js\\n- D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\webpack\\\\lib\\\\webpack.js\\n- D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\webpack-cli\\\\bin\\\\utils\\\\validate-options.js\\n- D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\webpack-cli\\\\bin\\\\utils\\\\convert-argv.js\\n- D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\webpack-cli\\\\bin\\\\cli.js\\n- D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\webpack\\\\bin\\\\webpack.js\\n babel-loader@8 requires Babel 7.x (the package '@babel/core'). If you'd like to use Babel 6.x ('babel-core'), you should install 'babel-loader@7'.\\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:966:15)\\n    at Function.Module._load (internal/modules/cjs/loader.js:842:27)\\n    at Module.require (internal/modules/cjs/loader.js:1026:19)\\n    at require (D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\v8-compile-cache\\\\v8-compile-cache.js:161:20)\\n    at Object.<anonymous> (D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\babel-loader\\\\lib\\\\index.js:10:11)\\n    at Module._compile (D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\v8-compile-cache\\\\v8-compile-cache.js:194:30)\\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)\\n    at Module.load (internal/modules/cjs/loader.js:986:32)\\n    at Function.Module._load (internal/modules/cjs/loader.js:879:14)\\n    at Module.require (internal/modules/cjs/loader.js:1026:19)\\n    at require (D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\v8-compile-cache\\\\v8-compile-cache.js:161:20)\\n    at loadLoader (D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\loader-runner\\\\lib\\\\loadLoader.js:18:17)\\n    at iteratePitchingLoaders (D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:169:2)\\n    at runLoaders (D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:365:2)\\n    at NormalModule.doBuild (D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:295:3)\\n    at NormalModule.build (D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:446:15)\\n    at Compilation.buildModule (D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\webpack\\\\lib\\\\Compilation.js:739:10)\\n    at D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\webpack\\\\lib\\\\Compilation.js:1111:12\\n    at D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:409:6\\n    at D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:155:13\\n    at AsyncSeriesWaterfallHook.eval [as callAsync] (eval at create (D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:4:1)\\n    at AsyncSeriesWaterfallHook.lazyCompileHook (D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\tapable\\\\lib\\\\Hook.js:154:20)\\n    at D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:138:29\\n    at D:\\\\OpenServer\\\\domains\\\\webpack\\\\study.loc\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:346:9\\n    at processTicksAndRejections (internal/process/task_queues.js:79:11)\");\n\n//# sourceURL=webpack:///./resource/js/index.js?");
+			"use strict";
+			eval("\n\nvar array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\narray.forEach(function (elem) {\n    elem++;\n});\nconsole.log(array);\n\n//# sourceURL=webpack:///./resource/js/count.js?");
 
-/***/ })
+			/***/
+		}),
 
-/******/ });
+		/***/ "./resource/js/index.js":
+		/*!******************************!*\
+		  !*** ./resource/js/index.js ***!
+		  \******************************/
+		/*! no static exports found */
+		/***/ (function (module, exports, __webpack_require__) {
+
+			"use strict";
+			eval("\n\nvar l = 12;\nvar f = 3;\n\nconsole.log(l - f);\n\n//# sourceURL=webpack:///./resource/js/index.js?");
+
+			/***/
+		}),
+
+		/***/ 0:
+		/*!***********************************************************!*\
+		  !*** multi ./resource/js/count.js ./resource/js/index.js ***!
+		  \***********************************************************/
+		/*! no static exports found */
+		/***/ (function (module, exports, __webpack_require__) {
+
+			eval("__webpack_require__(/*! ./resource/js/count.js */\"./resource/js/count.js\");\nmodule.exports = __webpack_require__(/*! ./resource/js/index.js */\"./resource/js/index.js\");\n\n\n//# sourceURL=webpack:///multi_./resource/js/count.js_./resource/js/index.js?");
+
+			/***/
+		})
+
+		/******/
+	});
