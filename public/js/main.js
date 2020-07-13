@@ -61,85 +61,77 @@
 /******/ 		__webpack_require__.r(ns);
 /******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
 /******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
 /******/
-		return ns;
-		/******/
-	};
-	/******/
-	/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-	/******/
-	__webpack_require__.n = function (module) {
-		/******/
-		var getter = module && module.__esModule ?
-			/******/            function getDefault() {
-				return module['default'];
-			} :
-			/******/            function getModuleExports() {
-				return module;
-			};
-		/******/
-		__webpack_require__.d(getter, 'a', getter);
-		/******/
-		return getter;
-		/******/
-	};
-	/******/
-	/******/ 	// Object.prototype.hasOwnProperty.call
-	/******/
-	__webpack_require__.o = function (object, property) {
-		return Object.prototype.hasOwnProperty.call(object, property);
-	};
-	/******/
-	/******/ 	// __webpack_public_path__
-	/******/
-	__webpack_require__.p = "";
-	/******/
-	/******/
-	/******/ 	// Load entry module and return exports
-	/******/
-	return __webpack_require__(__webpack_require__.s = 0);
-	/******/
-})
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
 /************************************************************************/
 /******/ ({
 
-		/***/ "./resource/js/count.js":
-		/*!******************************!*\
-		  !*** ./resource/js/count.js ***!
-		  \******************************/
-		/*! no static exports found */
-		/***/ (function (module, exports, __webpack_require__) {
+/***/ "./resource/js/count.js":
+/*!******************************!*\
+  !*** ./resource/js/count.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-			"use strict";
-			eval("\n\nvar array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\narray.forEach(function (elem) {\n    elem++;\n});\nconsole.log(array);\n\n//# sourceURL=webpack:///./resource/js/count.js?");
+"use strict";
 
-			/***/
-		}),
 
-		/***/ "./resource/js/index.js":
-		/*!******************************!*\
-		  !*** ./resource/js/index.js ***!
-		  \******************************/
-		/*! no static exports found */
-		/***/ (function (module, exports, __webpack_require__) {
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+array.forEach(function (elem) {
+    elem++;
+});
+console.log(array);
 
-			"use strict";
-			eval("\n\nvar l = 12;\nvar f = 3;\n\nconsole.log(l - f);\n\n//# sourceURL=webpack:///./resource/js/index.js?");
+/***/ }),
 
-			/***/
-		}),
+/***/ "./resource/js/index.js":
+/*!******************************!*\
+  !*** ./resource/js/index.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-		/***/ 0:
-		/*!***********************************************************!*\
-		  !*** multi ./resource/js/count.js ./resource/js/index.js ***!
-		  \***********************************************************/
-		/*! no static exports found */
-		/***/ (function (module, exports, __webpack_require__) {
+"use strict";
 
-			eval("__webpack_require__(/*! ./resource/js/count.js */\"./resource/js/count.js\");\nmodule.exports = __webpack_require__(/*! ./resource/js/index.js */\"./resource/js/index.js\");\n\n\n//# sourceURL=webpack:///multi_./resource/js/count.js_./resource/js/index.js?");
 
-			/***/
-		})
+var l = 12;
+var f = 3;
+console.log(l - f);
 
-		/******/
-	});
+/***/ }),
+
+/***/ 0:
+/*!***********************************************************!*\
+  !*** multi ./resource/js/count.js ./resource/js/index.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ./resource/js/count.js */"./resource/js/count.js");
+module.exports = __webpack_require__(/*! ./resource/js/index.js */"./resource/js/index.js");
+
+
+/***/ })
+
+/******/ });
+//# sourceMappingURL=main.js.map
