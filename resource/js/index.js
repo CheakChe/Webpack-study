@@ -1,4 +1,2 @@
-let l = 12;
-let f = 3;
+import '../scss/index.scss';
 
-console.log(l-f);

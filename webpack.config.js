@@ -2,21 +2,45 @@ const path = require('path');
 const glob = require('glob');
 
 module.exports = {
-	entry: glob.sync('./resource/**/*.js'),
+	devtool: 'source-map',
+	entry: {
+		'js/main.js': glob.sync('./resource/js/index.js'),
+		'css/main.css': glob.sync('./resource/scss/index.scss')
+	},
 	output: {
-		path: path.resolve(__dirname, 'public/js'),
-		filename: 'main.js'
+		path: path.resolve(__dirname, 'public'),
+		filename: "[name]"
 	},
 
 	module: {
 		rules: [
 			{
 				test: /\.js$/,
-				exclude: /node_modules/,
+				exclude: /(node_modules|bower_components)/,
 				use: {
-					loader: "babel-loader"
+					loader: 'babel-loader'
 				}
+			},
+			{
+				test: /\.scss$/,
+				exclude: /(node_modules|bower_components)/,
+				use: [
+					"style-loader",
+					"css-loader",
+					{
+						loader: 'sass-loader',
+						options: {
+							sourceMap: false,
+							sassOptions: {
+								outputStyle: 'compressed',
+							},
+						},
+					},
+				],
 			}
 		]
+	},
+	resolve: {
+		extensions: ['.js', '.scss']
 	}
 }
