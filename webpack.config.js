@@ -4,8 +4,8 @@ const glob = require('glob');
 module.exports = {
 	devtool: 'source-map',
 	entry: {
-		'js/main.js': glob.sync('./resource/js/*.js'),
-		'css/main.css': glob.sync('./resource/scss/*.scss')
+		'js/main.js': glob.sync('./resource/js/index.js'),
+		'css/main.css': glob.sync('./resource/scss/index.scss')
 	},
 	output: {
 		path: path.resolve(__dirname, 'public'),
@@ -25,6 +25,8 @@ module.exports = {
 				test: /\.scss$/,
 				exclude: /(node_modules|bower_components)/,
 				use: [
+					"style-loader",
+					"css-loader",
 					{
 						loader: 'sass-loader',
 						options: {
@@ -37,5 +39,8 @@ module.exports = {
 				],
 			}
 		]
+	},
+	resolve: {
+		extensions: ['.js', '.scss']
 	}
 }
